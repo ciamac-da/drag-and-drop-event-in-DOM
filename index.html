@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drag&Drop</title>
+  </head>
+  <body>
+    <div>
+      <div class="droptarget"
+      ondragover="dragOver(event)"
+      ondrop="drop(event)"
+      ondragenter="dragEnter(event)"
+      ondragleave="dragLeave(event)"
+      > 
+        <p
+          draggable="true"
+          id="dragtarget"
+         ondragstart="dragStart(event)"
+         ondragend="dragEnd(event)"
+
+        >
+          Drag me!
+        </p>
+      </div>
+      <div
+        class="droptarget"
+        ondragover="dragOver(event)"
+        ondrop="drop(event)"
+        ondragenter="dragEnter(event)"
+        ondragleave="dragLeave(event)"
+        >   
+      </div>
+    </div>
+    <p id="demo"></p>
+    <script src="draganddrop.js"></script>
+  </body>
+</html>
